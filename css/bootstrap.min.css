@@ -1,9 +1,4 @@
-/*!
- * Bootstrap v5.0.0 (https://getbootstrap.com/)
- * Copyright 2011-2021 The Bootstrap Authors
- * Copyright 2011-2021 Twitter, Inc.
- * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
- */
+
 
  :root {
     --bs-blue: #0d6efd;
@@ -2858,7 +2853,7 @@ textarea.form-control-lg {
 
 .btn-primary {
     color: #000;
-    background-color: #FEBA53;
+    background-color: #44b5d7;
     border-color: #FEBA53
 }
 
@@ -3378,7 +3373,7 @@ textarea.form-control-lg {
 
 .btn-link {
     font-weight: 400;
-    color: #FEBA53;
+    color: #44b5d7;
     text-decoration: none
 }
 
@@ -4010,7 +4005,10 @@ textarea.form-control-lg {
 .navbar-collapse {
     flex-basis: 100%;
     flex-grow: 1;
-    align-items: center
+    align-items: center;
+    z-index: 999999999999;
+    /* background-color: #44b5d7; */
+    /* color: #e0f0ff !important; */
 }
 
 .navbar-toggler {
@@ -7196,9 +7194,9 @@ textarea.form-control-lg {
     margin-right: .25rem !important
 }
 
-.me-2 {
+/* .me-2 {
     margin-right: .5rem !important
-}
+} */
 
 .me-3 {
     margin-right: 1rem !important
@@ -7724,7 +7722,7 @@ textarea.form-control-lg {
 }
 
 .text-primary {
-    color: #FEBA53 !important
+    color: #44b5d7 !important
 }
 
 .text-secondary {

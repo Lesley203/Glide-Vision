@@ -5,11 +5,54 @@
     --light: #F3F6F8;
     --dark: #0C2B4B;
 }
-
+@media (max-width: 992px) {
+    .logT {
+        height:96px !important;
+    }
+}
 .py-6 {
     padding-top: 6rem;
     /* padding-bottom: 6rem; */
 }
+
+.services-section {
+    background-color: #0d1117;
+    color: #f0f0f0;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00f7ff;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+    color: #ccc;
+  }
+  
+  .service-card {
+    background: #1b1f27;
+    border-radius: 12px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.2);
+  }
+  
+  .service-icon {
+    font-size: 40px;
+    color: #00f7ff;
+    margin-bottom: 20px;
+  }
+  
+
+
 
 .my-6 {
     margin-top: 6rem;
@@ -63,7 +106,7 @@
 
 .btn-lg-square {
     width: 48px;
-    height: 48px;
+    /* height: 48px; */
 }
 
 .btn-square,
@@ -100,7 +143,7 @@
 
 .navbar .navbar-nav .nav-link:hover,
 .navbar .navbar-nav .nav-link.active {
-    color: var(--primary);
+    color: #44b5d7;
 }
 
 .navbar .dropdown-toggle::after {
@@ -117,7 +160,23 @@
         margin-right: 0;
         padding: 10px 0;
     }
-
+.navbar-collapse {
+    
+     background-color: #072e39 !important;
+   
+}
+.hero-content {
+    
+    height: 85% !important;
+ 
+}
+.me-2 {
+    margin-bottom: .5rem !important; 
+}
+.nav-item {
+     text-align: center;
+   
+}
     .navbar .navbar-nav {
         border-top: 1px solid #EEEEEE;
     }
@@ -142,7 +201,114 @@
     }
 }
 
+.hero-section {
+    background: url('/img/Security\ &\ Software\ Solutions.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    color: white;
+}
 
+.hero-overlay {
+    background-color: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 0 5%; */
+}
+
+.hero-text {
+    max-width: 50%;
+    
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-text h4 {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.hero-image {
+    flex: 1 1 45%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    /* flex-wrap: wrap; */
+}
+.homepage-circle-image {
+    width: 180px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 50%;
+    /* background-color: #ffffff; */
+    border: 1px solid  #44b5d7; /* Company theme color or accent */
+    box-shadow: 0 6px 18px rgba(0, 123, 255, 0.3); /* Soft brand-colored shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.homepage-circle-image:hover {
+    transform: scale(1.06);
+    box-shadow: 0 10px 24px rgba(0, 123, 255, 0.4);
+}
+
+.hero-image img {
+    width: 80%;
+    max-width: 550px;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        text-align: center;
+    }
+.navbar-collapse {
+    
+     background-color: #44b5d7 !important;
+   
+}
+    /* .hero-text, .hero-image {
+        max-width: 100%;
+    }
+
+    .hero-image img {
+        width: 80%;
+        margin-top: 20px;
+    } */
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    
+
+    .hero-image {
+        justify-content: center;
+    }
+
+    .hero-text, .hero-image {
+        flex: 1 1 100%;
+    }
+
+    .hero-image img {
+        width: 45%;
+    }
+}
 /*** Header ***/
 .carousel-caption {
     top: 0;
@@ -153,7 +319,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: rgba(0, 0, 0, .75);
+    /* background: rgba(0, 0, 0, .75); */
     z-index: 1;
 }
 
@@ -167,7 +333,7 @@
     width: 3rem;
     height: 3rem;
     background-color: var(--primary);
-    border: 10px solid var(--primary);
+    border: 10px solid #44b5d7;
 }
 
 @media (max-width: 768px) {

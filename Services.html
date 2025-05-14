@@ -5,11 +5,11 @@
     <meta charset="utf-8">
     <title>Glide Vision Systems</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
- 
+   
     <meta content="" name="description">
 
     <!-- Favicon -->
-  <link rel="icon" type="image/png" href="/img/Favicon/favicon-96x96.png" sizes="96x96" />
+   <link rel="icon" type="image/png" href="/img/Favicon/favicon-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/svg+xml" href="/img/Favicon/favicon.svg" />
 <link rel="shortcut icon" href="/img/Favicon/favicon.ico" />
 <link rel="apple-touch-icon" sizes="180x180" href="/img/Favicon/apple-touch-icon.png" />
@@ -57,7 +57,7 @@
         }
     
         .nav-item a:hover {
-          
+            
             transform: scale(1.05);
         }
     
@@ -151,9 +151,9 @@
         <div class="collapse navbar-collapse justify-content-center" id="navbarCollapse">
             <ul class="navbar-nav">
                 <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="about.html" class="nav-link active">About</a></li>
+                <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
                 <li class="nav-item dropdown">
-                    <a href="Services.html" class="nav-link">Services</a>
+                    <a href="Services.html" class="nav-link active">Services</a>
                 </li>
                 <li class="nav-item"><a href="Vision.html" class="nav-link">Vision</a></li>
                 <li class="nav-item"><a href="Site_Work.html" class="nav-link">Our Work</a></li>
@@ -169,12 +169,12 @@
     <!-- Page Header Start -->
     <div class=" py-6 my-6 mt-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="container text-center">
-            <h1 class="display-4 text-white animated slideInDown mb-4">About</h1>
+            <h1 class="display-4 text-white animated slideInDown mb-4">Our Services</h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">
                     <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
                     
-                    <li class="breadcrumb-item text-primary active" aria-current="page">About Us</li>
+                    <li class="breadcrumb-item text-primary active" aria-current="page">Services</li>
                 </ol>
             </nav>
         </div>
@@ -182,65 +182,178 @@
     <!-- Page Header End -->
 
 
-   <!-- About Start -->
-   <div class="container-xxl py-6">
-    <div class="container">
-        <div class="row g-5">
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="position-relative overflow-hidden ps-5 pt-5 h-100" style="min-height: 400px;">
-                    <img class="position-absolute w-100 h-100" src="/img/ChatGPT Image May 8, 2025, 01_53_48 PM.png" alt="Glide Vision Systems" style="object-fit: cover;">
-                    <img class="position-absolute top-0 start-0 bg-white " src="/img/Artboard 8 (1).png" alt="Glide Logo" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
-                </div>
+ <style>
+    .services-section {
+        padding: 80px 0;
+        background: #0b0c10;
+        color: #fff;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    .services-section h2 {
+        text-align: center;
+        font-size: 2.5rem;
+        margin-bottom: 40px;
+        color: #00d4ff;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+        gap: 30px;
+        max-width: 1200px;
+        margin: auto;
+        padding: 0 20px;
+    }
+
+    .service-card {
+        background: #1f2833;
+        border-radius: 10px;
+        padding: 30px;
+        box-shadow: 0 10px 20px rgba(0, 212, 255, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        position: relative;
+    }
+
+    .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 30px rgba(0, 212, 255, 0.2);
+    }
+
+    .service-icon {
+        font-size: 2rem;
+        color: #00d4ff;
+        margin-bottom: 15px;
+    }
+
+    .service-title {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .service-description {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        color: #cdd0d4;
+    }
+
+    .more-info {
+        margin-top: 15px;
+        display: none;
+        font-size: 0.9rem;
+        color: #aab2bd;
+    }
+
+    .btn-more {
+        background-color: #00d4ff;
+        border: none;
+        padding: 8px 16px;
+        margin-top: 15px;
+        color: #0b0c10;
+        border-radius: 5px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-more:hover {
+        background-color: #00aacc;
+    }
+</style>
+
+<section class="services-section">
+    <h2>Our Services</h2>
+    <div class="services-grid">
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-video"></i></div>
+            <div class="service-title">Camera Systems</div>
+            <div class="service-description">
+                CCTV solutions with HD recording and live remote access.
             </div>
-            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                <div class="h-100">
-                    <h6 class="text-primary text-uppercase mb-2">About Glide Vision</h6>
-                    <h1 class="display-6 mb-4">Engineering Smart, Secure, and Scalable Futures</h1>
-                    <p>
-                        Glide Vision Systems is a tech-driven company dedicated to creating intelligent digital solutions 
-                        that enhance security, optimize management, and streamline user experiences. 
-                        We combine cutting-edge innovation with practical implementation to serve both private and public sectors.
-                    </p>
-                    <p class="mb-4">
-                        From biometric-based vehicle access systems to advanced driving school management platforms, 
-                        our solutions are built to be secure, responsive, and future-ready. 
-                        We believe technology should not only solve problems — it should inspire trust and enable progress.
-                    </p>
+            <button class="btn-more" onclick="toggleInfo(this)">More Info</button>
+            <div class="more-info">
+                Our camera systems feature motion detection, night vision, and cloud backups, tailored for both residential and commercial use.
+            </div>
+        </div>
 
-                    <h6 class="text-primary text-uppercase mb-2">Advantages of Glide Vision Systems</h6>
-<div class="row g-2 mb-4 pb-2">
-<div class="col-sm-6">
-    <i class="fa fa-check text-primary me-2"></i>Advanced Access Control Solutions for Secure and Streamlined Entry
-</div>
-<div class="col-sm-6">
-    <i class="fa fa-check text-primary me-2"></i>High-Resolution CCTV Systems for 24/7 Surveillance and Monitoring
-</div>
-<div class="col-sm-6">
-    <i class="fa fa-check text-primary me-2"></i>Integrated Software Solutions for Seamless Management and Operation
-</div>
-<div class="col-sm-6">
-    <i class="fa fa-check text-primary me-2"></i>State-of-the-Art Alarm Systems for Immediate Alerts and Threat Detection
-</div>
-<div class="col-sm-6">
-    <i class="fa fa-check text-primary me-2"></i>Reliable Video Intercoms for Clear and Secure Communication
-</div>
-<div class="col-sm-6">
-    <i class="fa fa-check text-primary me-2"></i>Real-Time Alerts and Monitoring to Keep Your Premises Secure at All Times
-</div>
-</div>
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-key"></i></div>
+            <div class="service-title">Access Control</div>
+            <div class="service-description">
+                Secure, smart access using biometrics or key cards.
+            </div>
+            <button class="btn-more" onclick="toggleInfo(this)">More Info</button>
+            <div class="more-info">
+                Includes time-based access, audit logs, remote unlocking, and integration with security systems.
+            </div>
+        </div>
 
-                    
-                    <div class="row g-4">
-                        <div class="col-sm-6">
-                            <a href="Site_Work.html" class="btn btn-primary py-3 px-5">Explore Our Work</a>
-                        </div>
-                       
-                    </div>
-                </div>
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-code"></i></div>
+            <div class="service-title">Software Development</div>
+            <div class="service-description">
+                Full-stack custom software for web, mobile, and desktop.
+            </div>
+            <button class="btn-more" onclick="toggleInfo(this)">More Info</button>
+            <div class="more-info">
+                We build scalable, user-centric software using technologies like .NET, React, Flutter, and SQL, optimized for performance and maintainability.
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-phone-volume"></i></div>
+            <div class="service-title">Video Intercoms</div>
+            <div class="service-description">
+                Manage visitors via real-time video and audio systems.
+            </div>
+            <button class="btn-more" onclick="toggleInfo(this)">More Info</button>
+            <div class="more-info">
+                Intercoms include app-based control, two-way talk, and door unlocking capabilities, perfect for apartments or office use.
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-bell"></i></div>
+            <div class="service-title">Alarm Systems</div>
+            <div class="service-description">
+                Intrusion alerts via sensors and emergency notifications.
+            </div>
+            <button class="btn-more" onclick="toggleInfo(this)">More Info</button>
+            <div class="more-info">
+                Motion sensors, window/door contact alarms, and central monitoring give you complete peace of mind.
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-icon"><i class="fas fa-network-wired"></i></div>
+            <div class="service-title">IT Consultant Systems</div>
+            <div class="service-description">
+                Expert guidance on IT infrastructure, cloud, and security.
+            </div>
+            <button class="btn-more" onclick="toggleInfo(this)">More Info</button>
+            <div class="more-info">
+                We help you plan, deploy, and maintain networks, cloud services, backup solutions, and cybersecurity protocols tailored to your operations.
             </div>
         </div>
     </div>
-</div>
+</section>
+
+<script>
+    function toggleInfo(button) {
+        const moreInfo = button.nextElementSibling;
+        if (moreInfo.style.display === "block") {
+            moreInfo.style.display = "none";
+            button.innerText = "More Info";
+        } else {
+            moreInfo.style.display = "block";
+            button.innerText = "Less Info";
+        }
+    }
+</script>
+
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
     <!-- About End -->
 
